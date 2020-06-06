@@ -8,7 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.eno.enotest.R;
@@ -60,7 +60,7 @@ public class HomeFragment extends BaseFragment {
         mVpHome.setOffscreenPageLimit(1);
     }
 
-    public class MyAdapter extends FragmentStatePagerAdapter {
+    public class MyAdapter extends FragmentPagerAdapter {
 
 
         public MyAdapter(@NonNull FragmentManager fm) {
